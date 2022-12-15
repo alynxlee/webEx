@@ -2,7 +2,7 @@
 
 /* 모바일 */
 html {
-  font-family: 'Noto Sans KR', -apple-system,BlinkMacSystemFont,helvetica,"Apple SD Gothic Neo", sans-serif;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, helvetica, 'Apple SD Gothic Neo', sans-serif;
   font-size: 14px;
   scroll-behavior: smooth;
 }
@@ -17,23 +17,19 @@ img {
 
 /********* goUp *********/
 .goUp {
-  width: 44px; height: 44px;
+  width: 44px;
+  height: 44px;
   position: fixed;
-  right: 30px; bottom: 40px;
+  right: 30px;
+  bottom: 40px;
   transition: 0.3s;
-  box-shadow: 
-  0px 1.3px 2.2px rgba(0, 0, 0, 0.02),
-  0px 3.2px 5.3px rgba(0, 0, 0, 0.028),
-  0px 6px 10px rgba(0, 0, 0, 0.035),
-  0px 10.7px 17.9px rgba(0, 0, 0, 0.042),
-  0px 20.1px 33.4px rgba(0, 0, 0, 0.05),
-  0px 48px 80px rgba(0, 0, 0, 0.07)
-  ;
+  box-shadow: 0px 1.3px 2.2px rgba(0, 0, 0, 0.02), 0px 3.2px 5.3px rgba(0, 0, 0, 0.028), 0px 6px 10px rgba(0, 0, 0, 0.035), 0px 10.7px 17.9px rgba(0, 0, 0, 0.042),
+    0px 20.1px 33.4px rgba(0, 0, 0, 0.05), 0px 48px 80px rgba(0, 0, 0, 0.07);
   z-index: 9999;
 }
 .goUp:hover {
   transform: scale(1.1);
-  filter: brightness(0.9) ;
+  filter: brightness(0.9);
 }
 
 /********* navigation *********/
@@ -41,7 +37,7 @@ nav {
   height: 54px;
   border-bottom: 1px #ccc solid;
   background-color: #fff;
-  
+
   position: fixed;
   width: 100%;
 
@@ -52,8 +48,9 @@ nav h1 {
   margin-left: 10px;
 }
 nav h1 a {
-  width: 125px; height: 31px;
-  background: url(./images/logo-m.png) no-repeat 50% /cover;
+  width: 125px;
+  height: 31px;
+  background: url(./images/logo-m.png) no-repeat 50% / cover;
   transition: 0.5s;
 }
 nav #toggle_btn {
@@ -62,18 +59,19 @@ nav #toggle_btn {
 }
 nav #toggle_btn span {
   font-size: 30px;
-  
-  position: absolute;
-  top: 12px; right: 10px;
-}
 
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
 
 nav #menu_wrap {
   background-color: #fff;
   width: 100%;
 
   position: absolute;
-  left: 0; top: 54px;
+  left: 0;
+  top: 54px;
 
   opacity: 0;
 
@@ -122,7 +120,7 @@ nav #menu_wrap #gnb > li > .sub_menu > li:last-child > a:last-child {
 nav #menu_wrap #gnb > li > .sub_menu > li > a:hover {
   color: #c83044;
   text-decoration: underline;
-} 
+}
 
 nav #menu_wrap .menuContainer #registry {
   position: absolute;
@@ -132,7 +130,6 @@ nav #menu_wrap .menuContainer #registry {
   width: 100vw;
   border-bottom: 1px #ddd solid;
   padding: 10px 15px;
-
 }
 nav #menu_wrap .menuContainer #registry li a {
   font-size: 11px;
@@ -194,7 +191,7 @@ header .header_slideWrap .slideList p {
     transform: translateY(0);
     opacity: 1;
   }
-} 
+}
 @keyframes moveToTop {
   0% {
     transform: translateY(20px);
@@ -207,7 +204,7 @@ header .header_slideWrap .slideList p {
 }
 
 /********* slide *********/
-.header_wrap input[class="slide"] {
+.header_wrap input[class='slide'] {
   display: none;
 }
 .header_slideWrap {
@@ -225,13 +222,13 @@ header .header_slideWrap .slideList p {
   transform: 0.5s;
 }
 
-.header_wrap [id="slide1"]:checked ~ .header_slideWrap .slideList #list1 {
+.header_wrap [id='slide1']:checked ~ .header_slideWrap .slideList #list1 {
   transform: translateX(0%);
 }
-.header_wrap [id="slide2"]:checked ~ .header_slideWrap .slideList #list2 {
+.header_wrap [id='slide2']:checked ~ .header_slideWrap .slideList #list2 {
   transform: translateX(-100%);
 }
-.header_wrap [id="slide3"]:checked ~ .header_slideWrap .slideList #list3 {
+.header_wrap [id='slide3']:checked ~ .header_slideWrap .slideList #list3 {
   transform: translateX(-200%);
 }
 
@@ -243,7 +240,8 @@ header .header_slideWrap .slideList p {
   transform: translateY(-50%);
   padding: 20px;
   cursor: pointer;
-  width: 20px; height: 20px;
+  width: 20px;
+  height: 20px;
 }
 .header_slideWrap .slideControl .left {
   background: url(./images/arrow-left.png) no-repeat 50% / cover;
@@ -267,7 +265,6 @@ header .header_slideWrap .slideList p {
 .lidePaging > li {
   display: inline-block;
   vertical-align: middle;
-  
 }
 
 .slidePaging > li > label {
@@ -277,18 +274,17 @@ header .header_slideWrap .slideList p {
   border: 1px #ddd solid;
   margin: 20px 2px;
   cursor: pointer;
-  
 }
 
-.header_wrap input[id="slide1"]:checked ~ .header_slideWrap .slidePaging > li:nth-child(1) > label {
+.header_wrap input[id='slide1']:checked ~ .header_slideWrap .slidePaging > li:nth-child(1) > label {
   background-color: #c83044;
   border: 1px solid #c83044;
 }
-.header_wrap input[id="slide2"]:checked ~ .header_slideWrap .slidePaging > li:nth-child(2) > label {
+.header_wrap input[id='slide2']:checked ~ .header_slideWrap .slidePaging > li:nth-child(2) > label {
   background-color: #c83044;
   border: 1px solid #c83044;
 }
-.header_wrap input[id="slide3"]:checked ~ .header_slideWrap .slidePaging > li:nth-child(3) > label {
+.header_wrap input[id='slide3']:checked ~ .header_slideWrap .slidePaging > li:nth-child(3) > label {
   background-color: #c83044;
   border: 1px solid #c83044;
 }
@@ -348,7 +344,6 @@ main #main_intro .main_intro_inner a .ghost_btn1:hover {
   border: #000 1px solid;
 }
 
-
 /********* main_product *********/
 main .main_product {
   background-color: #f2f2f2;
@@ -364,7 +359,7 @@ main .main_product .gridWrap {
   display: grid;
   grid-template: repeat(4, 1fr) / repeat(2, 1fr);
   gap: 20px;
-  
+
   animation: moveToTop 2s running;
 }
 main .main_product .gridWrap .grid_bg1 {
@@ -420,10 +415,12 @@ main .main_product .gridWrap a:first-child p {
   display: none;
 }
 main .main_product .gridWrap .gridBg:hover::after {
-  content: "";
-  width: 100%; height: 100%;
+  content: '';
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   backdrop-filter: brightness(50%);
   z-index: 99;
 }
@@ -478,7 +475,6 @@ main .main_product .gridWrap .gridBg:hover p {
     opacity: 1;
   }
 }
-
 
 /********* main_business *********/
 main .main_business {
@@ -541,8 +537,9 @@ main .main_business ul li:hover a h4 {
 .footer_inside .inside_wrap {
   animation: moveToTop 2s running;
 }
-.footer_inside .title h3, .footer_inside .title p {
- color: #fff;
+.footer_inside .title h3,
+.footer_inside .title p {
+  color: #fff;
 }
 .footer_inside ul {
   text-align: center;
